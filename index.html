@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retrospective Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Retrospective Board</h1>
+
+  <div id="controls">
+    <input type="text" id="note-text" placeholder="Enter note..." />
+    <input type="color" id="note-color" value="#ffd966" />
+    <select id="column-select">
+      <option value="went-well">What went well</option>
+      <option value="improve">What can be improved</option>
+      <option value="action-items">Action items</option>
+    </select>
+    <button onclick="addNote()">Add Note</button>
+  </div>
+
+  <div class="board">
+    <div class="column" id="went-well" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>What went well</h2>
+    </div>
+    <div class="column" id="improve" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>What can be improved</h2>
+    </div>
+    <div class="column" id="action-items" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Action items</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
