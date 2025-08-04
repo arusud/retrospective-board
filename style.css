@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  margin: 5px;
+  padding: 6px;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.column {
+  width: 30%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.column h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.note {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  cursor: move;
+  color: #000;
+  position: relative;
+}
+
+.note button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
